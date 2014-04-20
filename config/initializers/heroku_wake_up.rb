@@ -1,6 +1,6 @@
 if Rails.env.production?
   require 'rufus/scheduler'
-  scheduler = Rufus::Scheduler.start_new
+  scheduler = Rufus::Scheduler.new
 
   scheduler.every '10m' do
     require 'net/http'
