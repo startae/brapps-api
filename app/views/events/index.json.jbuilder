@@ -7,5 +7,7 @@ json.array! @events do |event|
   json.created_at event.created_at
   json.updated_at event.updated_at
   json.image asset_url(event.image)
+  json.large_image asset_url(event.large_image)
+  json.speakers event.speakers
 end
 
