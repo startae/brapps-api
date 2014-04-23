@@ -48,3 +48,5 @@ html lang='#{I18n.locale}'
 
   body class='#{@page_class} #{@item_menu} standalone'
     = yield
+    = javascript_include_tag 'vendor'
+    = javascript_include_tag 'application'
