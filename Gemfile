@@ -45,3 +45,5 @@ gem 'start'
 
 
 gem "rufus-scheduler", "~> 3.0.3", group: :production
+
+gem 'xray-rails', '~> 0.1.14'
