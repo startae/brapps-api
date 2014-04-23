@@ -1,7 +1,11 @@
+#= require _stay_standalone
+
 # -------------------------------------
 #   Inbox
 # -------------------------------------
 $ ->
+  $("body").addClass "is-standalone" if navigator.standalone
+
   # Fastclick
   FastClick.attach document.body
 
