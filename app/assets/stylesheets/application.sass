@@ -1,0 +1,29 @@
+// ----- Bourbon ----- //
+$asset-pipeline: true
+@import "bourbon/dist/bourbon"
+
+
+body
+  max-width: 320px
+  margin: 0 auto
+
+.header
+  background-color: #f04f50
+  min-height: 44px
+
+.header__brand
+  a
+    @include hide-text
+    display: block
+    width: 77px
+    height: 44px
+    background: transparent image-url("logo-brapps.png") no-repeat 50% 50%
+    background-size: 77px 15px
+    margin: auto
+
+
+.nav
+  ul, li
+    list-style-type: none
+    padding: 0
+    margin: 0
