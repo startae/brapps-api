@@ -7,14 +7,14 @@
   nav.nav
     ul
       li.nav__item.nav__item--day1
-        = link_to '#' do
+        = link_to '#', data: {tab: 'tab-1'}, class: 'is-active' do
           | Sexta Feira <span>25 de abril</span>
       li.nav__item.nav__item--day2
-        = link_to '#' do
+        = link_to '#', data: {tab: 'tab-2'} do
           | Sábado <span>26 de abril</span>
 
   section.container
-    .list.list--day1
+    .list.list--day1.is-active data-tab-content='tab-1'
       - @events.first_day.each do |event|
         .list__item
           = link_to(event) do
@@ -26,7 +26,7 @@
               .item__title
                 = event.title
 
-    .list.list--day2 style='display: none;'
+    .list.list--day2 data-tab-content='tab-2'
       - @events.second_day.each do |event|
         .list__item
           = link_to(event) do
