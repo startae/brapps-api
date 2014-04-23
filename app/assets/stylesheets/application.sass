@@ -1,22 +1,15 @@
 @charset "utf-8"
 
-@import "reset"
+// VENDOR
 
 // ----- Bourbon ----- //
 $asset-pipeline: true
 @import "bourbon/dist/bourbon"
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400italic,600,800,400"
 
-%fw-semi-bold
-  font-weight: 600
-%fw-extra-bold
-  font-weight: 800
-%fw-regular
-  font-weight: 400
-%fw-italic
-  font-weight: 400
-  font-style: italic
-
+// IMPORTS
+@import "reset"
+@import "extends"
 
 
 body
@@ -122,6 +115,7 @@ html, body
       color: #fff
 
 
+// LIST
 .list
   background: #f6e550
 
