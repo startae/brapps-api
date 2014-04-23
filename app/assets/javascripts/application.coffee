@@ -6,6 +6,7 @@ $ ->
   FastClick.attach document.body
 
   $("[data-tab]").click ->
+    event.preventDefault()
     tab_target = $(this).attr("data-tab")
     $("[data-tab]").removeClass "is-active"
     $("[data-tab-content]").removeClass "is-active"
