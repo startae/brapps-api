@@ -1,3 +1,5 @@
+#encoding:utf-8
+
 day25 = Date.new(2014, 4, 25)
 day26 = Date.new(2014, 4, 26)
 

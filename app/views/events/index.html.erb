@@ -1,2 +1,20 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+
+<h2>Sexta Feira 25 de abril</h2><br/><br/>
+
+<% @events.first_day.each do |event|%>
+	<%= link_to(event) do %>
+		<%= image_tag event.image %> <br/>
+		<%= event.title %> <br/>
+		<%= event.time %> <br/>
+	<% end %>
+<%end%>
+<br/><br/>
+
+<h2>Sábado 26 de abril</h2><br/><br/>
+<% @events.second_day.each do |event|%>
+	<%= link_to(event) do %>
+		<%= image_tag event.image %> <br/>
+		<%= event.title %> <br/>
+		<%= event.time %> <br/>
+	<%end%>
+<%end%>
