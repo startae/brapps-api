@@ -1,0 +1,19 @@
+.app
+  header.header
+    .header__brand
+      = link_to '#' do
+        h1 BRAPPS
+
+  section.container
+		= image_tag @event.large_image
+		= @event.title
+
+		- @event.speakers.each do |speaker|
+			= speaker.name
+			br
+			= speaker.company
+
+		- if @event.first_day?
+			Sexta #{@event.time}
+		- else
+			Sábado #{@event.time}
