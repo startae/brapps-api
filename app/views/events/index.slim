@@ -1,36 +1,39 @@
-.header
-  .header__brand
-    = link_to '#' do
-      h1 BRAPPS
-
-.nav
-  ul
-    li.nav__item.nav__item--day1
+.app.has-navbar
+  header.header
+    .header__brand
       = link_to '#' do
-        | Sexta Feira <span>25 de abril</span>
-    li.nav__item.nav__item--day2
-      = link_to '#' do
-        | Sábado <span>26 de abril</span>
+        h1 BRAPPS
 
+  nav.nav
+    ul
+      li.nav__item.nav__item--day1
+        = link_to '#' do
+          | Sexta Feira <span>25 de abril</span>
+      li.nav__item.nav__item--day2
+        = link_to '#' do
+          | Sábado <span>26 de abril</span>
 
-.list.list--day1
-  - @events.first_day.each do |event|
-    .list__item
-      = link_to(event) do
-        .item__image
-          = image_tag event.image
-        .item__meta
-          = event.time
-        .item__title
-          = event.title
+  section.container
+    .list.list--day1
+      - @events.first_day.each do |event|
+        .list__item
+          = link_to(event) do
+            .item__image
+              = image_tag event.image
+            .body
+              .item__meta
+                = event.time
+              .item__title
+                = event.title
 
-.list.list--day2
-  - @events.second_day.each do |event|
-    .list__item
-      = link_to(event) do
-        .item__image
-          = image_tag event.image
-        .item__meta
-          = event.time
-        .item__title
-          = event.title
+    .list.list--day2 style='display: none;'
+      - @events.second_day.each do |event|
+        .list__item
+          = link_to(event) do
+            .item__image
+              = image_tag event.image
+            .body
+              .item__meta
+                = event.time
+              .item__title
+                = event.title
