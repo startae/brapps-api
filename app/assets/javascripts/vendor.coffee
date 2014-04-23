@@ -1,2 +1,2 @@
-# require zepto/zepto
-# require fastclick/lib/fastclick
+#= require zepto/zepto
+#= require fastclick/lib/fastclick
