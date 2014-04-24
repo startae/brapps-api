@@ -103,7 +103,7 @@ Event.destroy_all
     speakers: [
       Speaker.create!(name: 'Wesley Barbosa', company: 'Facebook Brasil'),
     ],
-    title: 'Como o Facebook pode potencializar sua startup',
+    title: 'Como o Facebook pode potencializar sua startup.',
     image: 'events/keynote.png',
     large_image: 'events/large-keynote.png'
   },
