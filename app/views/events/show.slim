@@ -1,3 +1,5 @@
+- @title = "#{@event.title} - BRAPPS"
+
 div class="app #{@event.day_class}"
   header.header
     span.header__arrow_left
@@ -15,21 +17,23 @@ div class="app #{@event.day_class}"
     .event
       .event__image
         = image_tag @event.large_image
+      .time
+        - if @event.first_day?
+          |Sexta, &nbsp;
+          =@event.time
+        - else
+          |Sábado, &nbsp;
+          =@event.time
       .event__title
         = @event.title
+
 
       .event__speakers
         - @event.speakers.each do |speaker|
           span.speakers__name
-            = speaker.name 
+            = speaker.name
           span.spealers_company
-            |, 
+            |, &nbsp;
             = speaker.company
-          br 
-      .time
-        - if @event.first_day?
-          |Sexta, 
-          =@event.time
-        - else
-          |Sábado, 
-          =@event.time
+          br
+
