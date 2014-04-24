@@ -16,7 +16,8 @@ $color-yellow: #f6e550
 $color-purple: #474f86
 $color-red: #f04f50
 $color-nude: #fed19c
-
+$color-green: #89ddc3
+$color-pink: #ff9fdf
 
 
 body
@@ -260,4 +261,28 @@ html, body
   .container
     background: $color-yellow
     color: $color-purple
+
+
+.about_page
+  .container
+    background-color: #7c54c3
+  .header
+    background-color: $color-green
+  .about
+    margin: 0 20px 0 20px
+    h1
+      @extend %fw-extra-bold
+      font-size: 21px
+      color: #fff
+    h3
+      color: $color-pink
+      @extend %fw-italic
+      font-size: 15px
+      span
+        color: #fff
+  .team_image
+    img
+      max-width: 100%
+      height: auto
+
 
