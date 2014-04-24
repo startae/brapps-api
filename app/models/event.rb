@@ -2,12 +2,12 @@ class Event < ActiveRecord::Base
   has_many :speakers, dependent: :destroy
   # attr_accessible :day, :time, :title, :image, :large_image
 
-  scope :first_day, ->() {where(:day=>Date.new(2014, 4, 25))}
-  scope :second_day, ->() {where(:day=>Date.new(2014, 4, 26))}
+  scope :first_day, ->() {where(:day=>Date.new(2014, 4, 25)).order(:time)}
+  scope :second_day, ->() {where(:day=>Date.new(2014, 4, 26)).order(:time)}
 
   def first_day?
   	self.day == Date.new(2014, 4, 25)
-  end  
+  end
   def second_day?
   	self.day == Date.new(2014, 4, 26)
   end

@@ -7,7 +7,14 @@ Event.destroy_all
 [
   {
     day: day25,
-    time: '10h',
+    time: '10:00h',
+    title: 'Abertura',
+    image: 'events/doors-open.png',
+    large_image: 'events/large-doors-open.png'
+  },
+  {
+    day: day25,
+    time: '10:30h',
     speakers: [
       Speaker.create!(name: 'Leo Gmeiner'),
     ],
