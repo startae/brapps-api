@@ -272,19 +272,34 @@ html, body
     background-color: $color-green
   .about
     margin: 0 20px 0 20px
+    a
+      color: #fff
     h1
       @extend %fw-extra-bold
       font-size: 21px
+      line-height: 1.2
       color: #fff
+      text-transform: uppercase
+      text-align: center
+      margin: 0
+      padding-top: 27px
     h3
       color: $color-pink
-      @extend %fw-italic
+      @extend %fw-regular
       font-size: 15px
-      span
+      line-height: 1.2
+      text-align: center
+      b
         color: #fff
+        @extend %fw-extra-bold
+
   .team_image
+    text-align: center
     img
       max-width: 100%
       height: auto
+      margin-left: auto
+      margin-right: auto
+      display: block
 
 

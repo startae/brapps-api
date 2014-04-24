@@ -13,6 +13,7 @@
       h1
         |Quer aprender a desenvolver uma App como essa?
       h3
-        |Venha conhecer o stand da <span>Superquadra</span> no evento do BRAPPS e aprenda design e programação em poucos minutos.
+        |Venha conhecer o stand da <b><a href='http://www.superquadra.co' target='_blank'>Superquadra</a></b> no evento do BRAPPS e aprenda design e programação em poucos minutos.
     .team_image
-      = image_tag('team-superquadra.jpg')
+      = link_to 'http://www.superquadra.co', target: '_blank' do
+        = image_tag('team-superquadra.jpg')
