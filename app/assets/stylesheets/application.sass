@@ -11,6 +11,13 @@ $asset-pipeline: true
 @import "reset"
 @import "extends"
 
+// VARIABLES
+$color-yellow: #f6e550
+$color-purple: #474f86
+$color-red: #f04f50
+$color-nude: #fed19c
+
+
 
 body
   font-family: 'Open Sans', 'sans-serif'
@@ -60,7 +67,7 @@ html, body
 
 // HEADER
 .header
-  background-color: #f04f50
+  background-color: $color-red
   height: 44px
   position: absolute
   z-index: 2
@@ -121,12 +128,12 @@ html, body
     margin: 0
 
   .nav__item--day1
-    background: #f6e550
+    background: $color-yellow
     a
-      color: #f04f50
+      color: $color-red
 
   .nav__item--day2
-    background: #474f86
+    background: $color-purple
     a
       color: #fff
 
@@ -177,15 +184,56 @@ html, body
         height: 70px
 
 .list--day1
-  background: #f6e550
+  background: $color-yellow
   .item__meta
-    color: #f04f50
+    color: $color-red
   .item__title
-    color: #474f86
+    color: $color-purple
 
 .list--day2
-  background: #474f86
+  background: $color-purple
   .item__meta
-    color: #f04f50
+    color: $color-red
   .item__title
-    color: #fed19c
+    color: $color-nude
+
+//SHOW PAGE
+
+.event
+  margin-left: 20px
+  .event__title
+    @extend %fw-semi-bold
+    font-size: 24px
+
+  .event__image
+    margin-bottom: 20px
+    img
+      width: 110px
+      height: 110px
+
+  .event__speakers
+    margin-top: 20px
+    color: $color-red
+    font-size: 14px
+    .speakers__name
+      text-transform: uppercase
+      @extend %fw-extra-bold
+    .speakers__company
+      @extend %fw-italic
+
+  .time
+    margin-top: 4px
+    @extend %fw-semi-bold
+    color: $color-red
+    font-size: 12px
+
+.second_day_show
+  .container
+    background: $color-purple
+    color: $color-nude
+
+.first_day_show
+  .container
+    background: $color-yellow
+    color: $color-purple
+

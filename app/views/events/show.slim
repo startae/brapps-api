@@ -1,19 +1,28 @@
-.app
+div class="app #{@event.day_class}"
   header.header
     .header__brand
       = link_to '#' do
         h1 BRAPPS
 
   section.container
-		= image_tag @event.large_image
-		= @event.title
+    .event
+      .event__image
+        = image_tag @event.large_image
+      .event__title
+        = @event.title
 
-		- @event.speakers.each do |speaker|
-			= speaker.name
-			br
-			= speaker.company
-
-		- if @event.first_day?
-			Sexta #{@event.time}
-		- else
-			Sábado #{@event.time}
+      .event__speakers
+        - @event.speakers.each do |speaker|
+          span.speakers__name
+            = speaker.name 
+          span.spealers_company
+            ', 
+            = speaker.company
+          br 
+      .time
+        - if @event.first_day?
+          'Sexta, 
+          =@event.time
+        - else
+          'Sábado, 
+          =@event.time
