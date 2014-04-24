@@ -14,29 +14,29 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '10:30h',
+    time: '10:30h - 11:00h',
     speakers: [
-      Speaker.create!(name: 'Leo Gmeiner'),
+      Speaker.create!(name: 'Leo Gmeiner', company: 'Intuitive Appz'),
     ],
     title: 'Os Beacons e o uso para o que empresas se relacionem um a um com seus clientes.',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
-  },
+  },  
   {
     day: day25,
-    time: '10:30h',
+    time: '11:00h - 11:30h',
     speakers: [
       Speaker.create!(name: 'Neto Marins', company: 'Google Brasil'),
     ],
-    title: 'Produzindo apps Android de alta qualidade',
+    title: 'Produzindo apps Android de alta qualidade.',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
   {
     day: day25,
-    time: '11h - 11:30h',
+    time: '11:30h - 12:30h',
     speakers: [
-      Speaker.create!(name: 'Amure Pinho', company: 'Investidor-anjo e CEO @ Blogo'),
+      Speaker.create!(name: 'Moderador: Amure Pinho', company: 'Investidor-anjo e CEO @ Blogo'),
       Speaker.create!(name: 'Rafael Moraes', company: 'Criatec'),
       Speaker.create!(name: 'Ricardo Moraes', company: 'Grow Investimentos'),
       Speaker.create!(name: 'João Kepler', company: 'Anjos do Brasil'),
@@ -49,37 +49,37 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '12h - 12:30h',
+    time: '12:30h - 13:30h',
     speakers: [
       Speaker.create!(name: 'Luís Cipriani', company: 'Twitter Brasil'),
     ],
-    title: 'Capture o momento com a Plataforma do Twitter',
+    title: 'Capture o momento com a plataforma do Twitter',
     image: 'events/keynote.png',
     large_image: 'events/large-keynote.png'
   },
   {
     day: day25,
-    time: '13h - 13:30h',
+    time: '13:30h - 14:30h',
     title: 'Almoço',
     image: 'events/lunch.png',
     large_image: 'events/large-lunch.png'
   },
   {
     day: day25,
-    time: '14h - 14:30h',
+    time: '14:30h - 15:30h',
     speakers: [
-      Speaker.create!(name: 'Bob Wollheim', company: 'Appies'),
+      Speaker.create!(name: 'Moderador: Bob Wollheim', company: 'Appies'),
       Speaker.create!(name: 'Demian Borba', company: 'Blackberry OS'),
       Speaker.create!(name: 'David Ruiz', company: 'Firefox OS'),
       Speaker.create!(name: 'Everaldo Coelho', company: 'Movile'),
     ],
-    title: 'Plataformas Mobile O que elas podem oferecer aos desenvolvedores mobile?',
+    title: 'Plataformas mobile: o que elas podem oferecer aos desenvolvedores mobile?',
     image: 'events/painel.png',
     large_image: 'events/large-painel.png'
   },
   {
     day: day25,
-    time: '15h',
+    time: '15:30h - 16:00h',
     speakers: [
       Speaker.create!(name: 'Orlando Fonseca Jr.', company: 'Imgnation Studios'),
     ],
@@ -89,7 +89,7 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '15:30h',
+    time: '16:00h - 16:30h',
     speakers: [
       Speaker.create!(name: 'André Santee', company: 'Asantee Games'),
     ],
@@ -99,17 +99,17 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '16h - 16:30h',
+    time: '16:30h - 17:30h',
     speakers: [
       Speaker.create!(name: 'Wesley Barbosa', company: 'Facebook Brasil'),
     ],
-    title: 'Como o Facebook pode potencializar sua startups',
+    title: 'Como o Facebook pode potencializar sua startup.',
     image: 'events/keynote.png',
     large_image: 'events/large-keynote.png'
   },
   {
     day: day25,
-    time: '17h - 17:30h',
+    time: '17:30h - 18:30h',
     speakers: [
       Speaker.create!(name: 'Luiz Felipe Barros', company: 'Viber'),
     ],
@@ -119,7 +119,7 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '18h - 18:30h',
+    time: '18:30h - 19:30h',
     speakers: [
       Speaker.create!(name: 'Saulo Arruda', company: 'Jera'),
       Speaker.create!(name: 'David Politanski', company: 'Google Brasil'),
@@ -127,13 +127,13 @@ Event.destroy_all
       Speaker.create!(name: 'Cesar Corregiari', company: 'RevMob'),
       Speaker.create!(name: 'André Ferraz', company: 'Ubee'),
     ],
-    title: 'Monetização de Apps',
+    title: 'Monetização de Apps: como ganhar dinheiro com apps e games mobile',
     image: 'events/painel.png',
     large_image: 'events/large-painel.png'
   },
   {
     day: day25,
-    time: '19h',
+    time: '19:30h - 20:00h',
     speakers: [
       Speaker.create!(name: 'Bernard Luna', company: 'Videolog'),
     ],
@@ -143,7 +143,7 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '19:30h',
+    time: '20:00h - 20:30',
     speakers: [
       Speaker.create!(name: 'Demian Borba', company: 'BlackBerry'),
     ],
@@ -153,7 +153,7 @@ Event.destroy_all
   },
   {
     day: day25,
-    time: '20h - 20:30h',
+    time: '20:30h - 21:30h',
     speakers: [
       Speaker.create!(name: 'Jacques Vaz', company: 'Telefonica Vivo'),
     ],
