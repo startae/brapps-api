@@ -28,5 +28,6 @@ $ ->
     lifespan:10000,
     expire:2,
     touchIcon:true,
+    returningVisitor: true,
     message:'Clique para criar um atalho em sua área de trabalho.'
   }  
