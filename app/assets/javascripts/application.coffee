@@ -1,4 +1,5 @@
 #= require _stay_standalone
+#= require add2home
 
 # -------------------------------------
 #   Inbox
@@ -20,3 +21,12 @@ $ ->
 
   return
   # end zepto
+
+  addToHomeConfig = {
+    animationIn: 'bubble',
+    animationOut: 'drop',
+    lifespan:10000,
+    expire:2,
+    touchIcon:true,
+    message:'Clique para criar um atalho em sua área de trabalho.'
+  }  
