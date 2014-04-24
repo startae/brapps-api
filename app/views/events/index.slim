@@ -1,9 +1,11 @@
 .app.has-navbar
   header.header
+    span.header__info
+      = link_to events_path do
+        |info
     .header__brand
       = link_to '#' do
         h1 BRAPPS
-
   nav.nav
     ul
       li.nav__item.nav__item--day1

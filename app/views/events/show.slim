@@ -1,8 +1,15 @@
 div class="app #{@event.day_class}"
   header.header
+    span.header__arrow_left
+      = link_to events_path do
+        |voltar
+    span.header__info
+      = link_to events_path do
+        |info
     .header__brand
       = link_to '#' do
         h1 BRAPPS
+
 
   section.container
     .event
@@ -16,13 +23,13 @@ div class="app #{@event.day_class}"
           span.speakers__name
             = speaker.name 
           span.spealers_company
-            ', 
+            |, 
             = speaker.company
           br 
       .time
         - if @event.first_day?
-          'Sexta, 
+          |Sexta, 
           =@event.time
         - else
-          'Sábado, 
+          |Sábado, 
           =@event.time

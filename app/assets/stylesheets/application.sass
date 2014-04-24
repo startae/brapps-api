@@ -81,6 +81,8 @@ html, body
       top: 20px
 
   .header__brand
+    width: 77px
+    margin: auto
     a
       @include hide-text
       display: block
@@ -88,8 +90,28 @@ html, body
       height: 44px
       background: transparent image-url("logo-brapps.png") no-repeat 50% 50%
       background-size: 77px 15px
-      margin: auto
 
+  .header__arrow_left
+    position: absolute
+    left: 0
+    a
+      @include hide-text
+      display: block
+      width: 44px
+      height: 44px
+      background: transparent image-url("icon-arrow-left.png") no-repeat 50% 50%
+      background-size: 12px 20px
+
+  .header__info
+    position: absolute
+    right: 0
+    a
+      @include hide-text
+      display: block
+      width: 44px
+      height: 44px
+      background: transparent image-url("info-icon.png") no-repeat 50% 50%
+      background-size: 22px 22px
 
 // NAV
 .nav
@@ -200,19 +222,21 @@ html, body
 //SHOW PAGE
 
 .event
-  margin-left: 20px
-  .event__title
-    @extend %fw-semi-bold
-    font-size: 24px
-
+  margin: 0 20px 0 20px
   .event__image
     margin-bottom: 20px
     img
       width: 110px
       height: 110px
 
+  .event__title
+    @extend %fw-semi-bold
+    font-size: 24px
+    border-bottom: solid 1px rgba(#000, 0.1)
+    padding-bottom: 10px
+
   .event__speakers
-    margin-top: 20px
+    margin-top: 10px
     color: $color-red
     font-size: 14px
     .speakers__name
