@@ -1,5 +1,4 @@
 #= require _stay_standalone
-#= require add2home
 
 # -------------------------------------
 #   Inbox
@@ -19,9 +18,6 @@ $ ->
     $("[data-tab-content=" + tab_target + "]").addClass "is-active"
     return
 
-  return
-  # end zepto
-
   addToHomeConfig = {
     animationIn: 'bubble',
     animationOut: 'drop',
@@ -29,5 +25,8 @@ $ ->
     expire:2,
     touchIcon:true,
     returningVisitor: true,
-    message:'Clique para criar um atalho em sua área de trabalho.'
-  }  
+    message:'Clique para criar um atalho em sua home screen.'
+  }
+
+  return
+  # end zepto
