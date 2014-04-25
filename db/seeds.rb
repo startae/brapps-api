@@ -18,17 +18,17 @@ Event.destroy_all
     speakers: [
       Speaker.create!(name: 'Leo Gmeiner', company: 'Intuitive Appz'),
     ],
-    title: 'Os Beacons e o uso para o que empresas se relacionem um a um com seus clientes.',
+    title: 'Os Beacons e o uso para o que empresas se relacionem um a um com seus clientes',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
-  },  
+  },
   {
     day: day25,
     time: '11:00h - 11:30h',
     speakers: [
       Speaker.create!(name: 'Neto Marins', company: 'Google Brasil'),
     ],
-    title: 'Produzindo apps Android de alta qualidade.',
+    title: 'Produzindo apps Android de alta qualidade',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
@@ -163,19 +163,26 @@ Event.destroy_all
   },
   {
     day: day26,
-    time: '10h',
+    time: '10:00h',
+    title: 'Abertura',
+    image: 'events/doors-open.png',
+    large_image: 'events/large-doors-open.png'
+  },
+  {
+    day: day26,
+    time: '10:30h - 11:00h',
     speakers: [
       Speaker.create!(name: 'Marcelo Minutti', company: 'IESB'),
     ],
-    title: 'Economia da Recomendação: Impactos e estratégias de sucesso para negócios mobile',
+    title: 'Economia da recomendação: impactos e estratégias de sucesso para negócios mobile',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
   {
     day: day26,
-    time: '10:30h',
+    time: '11:00h - 11:30h',
     speakers: [
-      Speaker.create!(name: 'Barbosa', company: 'Facebook Brasil'),
+      Speaker.create!(name: 'Wesley Barbosa', company: 'Facebook Brasil'),
     ],
     title: 'Programa de Preferred Market Developer do Facebook',
     image: 'events/speed-talk.png',
@@ -183,7 +190,7 @@ Event.destroy_all
   },
   {
     day: day26,
-    time: '11h - 11:30h',
+    time: '11:30h - 12:30h',
     speakers: [
       Speaker.create!(name: 'Guilherme Junqueira', company: 'ABStartups'),
       Speaker.create!(name: 'Pedro Marins', company: 'Esyo'),
@@ -191,37 +198,44 @@ Event.destroy_all
       Speaker.create!(name: 'Gustavo Goldschmidt', company: 'SuperPlayer'),
       Speaker.create!(name: 'Ricardo Jorge', company: 'Mobipium'),
     ],
-    title: 'Aquisição de Usuários',
+    title: 'Aquisição de usuários: estratégias de aquisição e retenção de usuários mobile',
     image: 'events/painel.png',
     large_image: 'events/large-painel.png'
   },
   {
     day: day26,
-    time: '12h - 12:30h',
+    time: '12:30h - 13:30h',
     speakers: [
-      Speaker.create!(name: 'Etsy (à confirmar)'),
+      Speaker.create!(name: 'Joel Goyette', company: 'BetterDoctor'),
     ],
-    title: 'Keynote Internacional',
+    title: 'Keynote Internacional - Case: BetterDoctor',
     image: 'events/keynote.png',
     large_image: 'events/large-keynote.png'
   },
   {
     day: day26,
-    time: '13h - 13:30h',
+    time: '13:30h - 14:30h',
     title: 'Almoço',
     image: 'events/lunch.png',
     large_image: 'events/large-lunch.png'
   },
   {
     day: day26,
-    time: '14h - 14:30h',
+    time: '14:30h - 15:30h',
+    speakers: [
+      Speaker.create!(name: 'Moderador: Yuri Ramos', company: 'MobGeek'),
+      Speaker.create!(name: 'Arian Razzaghi', company: 'Viva Real'),
+      Speaker.create!(name: 'Edson Mackeenzie', company: 'Videolog'),
+      Speaker.create!(name: 'Danilo Toledo', company: 'Taqtile'),
+      Speaker.create!(name: 'Rafael Lima', company: 'HE:Labs'),
+    ],
     title: 'Como montar um dream team para sua startup',
     image: 'events/painel.png',
     large_image: 'events/large-painel.png'
   },
   {
     day: day26,
-    time: '15h',
+    time: '15:30h - 16:00h',
     speakers: [
       Speaker.create!(name: 'Pedro Franceschi', company: 'Pagar.me'),
     ],
@@ -231,7 +245,7 @@ Event.destroy_all
   },
   {
     day: day26,
-    time: '15:30h',
+    time: '16:00h - 16:30h',
     speakers: [
       Speaker.create!(name: 'Roberto Braga', company: 'Ipê Engenharia'),
     ],
@@ -241,7 +255,7 @@ Event.destroy_all
   },
   {
     day: day26,
-    time: '16h - 16:30h',
+    time: '16:30h - 17:30h',
     speakers: [
       Speaker.create!(name: 'Marcio Brito'),
       Speaker.create!(name: 'Felipe Matos'),
@@ -252,17 +266,17 @@ Event.destroy_all
   },
   {
     day: day26,
-    time: '17h - 17:30h',
+    time: '17:30h - 18:30h',
     speakers: [
       Speaker.create!(name: 'Ricardo Jordao', company: 'Rakuten'),
     ],
-    title: 'Keynote',
+    title: 'Como o mobile vai transformar o e-commerce para sempre',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
   {
     day: day26,
-    time: '18h - 18:30h',
+    time: '18:30h - 19:30h',
     speakers: [
       Speaker.create!(name: 'Pedro Sorrentino', company: 'SendGrid'),
       Speaker.create!(name: 'Bruno Yoshimura', company: 'Kekanto'),
@@ -270,41 +284,34 @@ Event.destroy_all
       Speaker.create!(name: 'Daniel Avizú', company: 'ZoeMob'),
       Speaker.create!(name: 'Samir Iasbeck', company: 'Qranio'),
     ],
-    title: 'Escalabilidade Mobile',
+    title: 'Escalabilidade mobile: o desafio de escalar uma startup mobile',
     image: 'events/painel.png',
     large_image: 'events/large-painel.png'
   },
   {
     day: day26,
-    time: '19h',
+    time: '19:30h - 20:00h',
     speakers: [
       Speaker.create!(name: 'Saulo Arruda', company: 'Jera'),
     ],
-    title: 'Growth Hacking',
+    title: 'Growth Hacking Mobile',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
   {
     day: day26,
-    time: '19:30h',
+    time: '20:00h - 20:30h',
     speakers: [
       Speaker.create!(name: 'Pedro Marins', company: 'Eyso'),
     ],
-    title: 'ASO / Como conseguir mais downloads para o seu aplicativo mobile?',
+    title: 'ASO: como conseguir mais downloads para o seu aplicativo mobile?',
     image: 'events/speed-talk.png',
     large_image: 'events/large-speed-talk.png'
   },
   {
     day: day26,
-    time: '20h',
-    title: 'Palestra Nacional 06',
-    image: 'events/speed-talk.png',
-    large_image: 'events/large-speed-talk.png'
-  },
-  {
-    day: day26,
-    time: '20h - 20:30h',
-    title: 'Premiação StartupBatle e Hackthon',
+    time: '20:30h - 21:30h',
+    title: 'Premiação da Batalha de Startups e do Hacktathon',
     image: 'events/prize.png',
     large_image: 'events/large-prize.png'
   }
