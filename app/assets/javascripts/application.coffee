@@ -17,16 +17,3 @@ $ ->
     $(this).addClass "is-active"
     $("[data-tab-content=" + tab_target + "]").addClass "is-active"
     return
-
-  addToHomeConfig = {
-    animationIn: 'bubble',
-    animationOut: 'drop',
-    lifespan:10000,
-    expire:2,
-    touchIcon:true,
-    returningVisitor: true,
-    message:'Clique para criar um atalho em sua home screen.'
-  }
-
-  return
-  # end zepto
